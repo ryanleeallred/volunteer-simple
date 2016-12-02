@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <!-- Bootstrap and Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css">
+    <link rel="stylesheet" href="compiled.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar">Projects</span>
+              <span class="icon-bar">Volunteers</span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="img/rll.png" width="30" height="30" class="icon" alt="BYU Record Linking Lab Logo">
+              BYU Record Linking Lab
+            </a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://byuresearch.org/">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="volunteers.html">Volunteers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li> -->
+          </ul>
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- Begin Explanation Text -->
+      <p id="explanation1">The mission of the <a href="rll.byu.edu">BYU Record Linking Lab</a> is to help complete the US portion of the Family Tree on FamilySearch. Roughly 220 million people lived in the US between 1850 and 1940. We want to ensure that all of them are on the Family Tree with correct information about their family members (parents, spouses and children) and vital events (birth, marriage, and death) along with accompanying sources. Your help can make this possible!</p>
+      <p id="explanation2">The table below provides a set of tasks that would help in completing the tree. We have found that by breaking the larger project into specific tasks, that anyone can contribute to the project regardless of their previous experience. For each task we provide a link to a google doc that provides the specific items to do, some instructions on the task, and an indication of the time required per name and the level of difficulty. You are welcome to use the find feature in the google doc to work on individuals who have a particular last name or lived in a particular place.</p>
+      <!-- Begin ui-grid -->
+      <div ng-controller="MainCtrl">
+        <!-- <div id="grid1" ui-grid="{ data: data }" class="grid"></div> -->
+        <div id="grid1" ui-grid="gridOptions" class="grid"></div>
+      </div>
+      <!-- End ui-grid -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"></script>
+    <!-- UI-grid scripts -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <!-- <script src="/release/ui-grid.js"></script>
+    <script src="/release/ui-grid.css"></script> -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

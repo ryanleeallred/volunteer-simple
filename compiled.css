@@ -1,0 +1,58 @@
+/* to compile this scss use the command: sass --watch public/styles/main.scss:compiled.css in the volunteer-portal directory */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef; }
+
+.nav {
+  float: right; }
+.navbar-dark {
+  background-color: #373A3C; }
+  .navbar-dark .navbar-brand {
+    padding-top: 10px;
+    width: 300px;
+    display: inline-block;
+    color: white; }
+  .navbar-dark .icon {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block; }
+  .navbar-dark .nav, .navbar-dark navbar-nav {
+    background-color: #373A3C; }
+    .navbar-dark .nav .active, .navbar-dark navbar-nav .active {
+      background-color: #535557; }
+    .navbar-dark .nav .nav-link, .navbar-dark navbar-nav .nav-link {
+      color: white; }
+    .navbar-dark .nav .nav-link:hover, .navbar-dark navbar-nav .nav-link:hover {
+      background-color: #535557; }
+
+.container {
+  width: 80%;
+  margin-top: 20px; }
+
+#explanation1 {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+#explanation2 {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.grid {
+  margin-top: 30px;
+  height: 50vh;
+
+}
+
+.myGrid {
+    width: 500px;
+    height: 250px;
+  }
+
+
+/*# sourceMappingURL=compiled.css.map */
